@@ -1,3 +1,4 @@
+@file:JvmName("FirebaseRemoteConfigService")
 package com.andhicaaa.corelibrary.firebase
 
 import android.content.Context
