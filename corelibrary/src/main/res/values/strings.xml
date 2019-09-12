@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CoreLibrary</string>
+    <item name="server_url" translatable="false" type="string" />
+    <item name="okhttp_log_level" translatable="false" type="string" />
+    <item name="notification_res_id" translatable="false" type="drawable" />
+    <item name="remote_config_cache_expiry_time" type="integer" />
 </resources>

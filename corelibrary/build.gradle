@@ -42,6 +42,26 @@ dependencies {
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //dagger
+    api 'com.google.dagger:dagger:2.24'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.24'
+
+    //logging
+    implementation("com.squareup.okhttp3:logging-interceptor:4.2.0")
+
+    //firebase
+    api 'com.google.firebase:firebase-config:11.6.0'
+    api 'com.google.firebase:firebase-database:11.6.0'
+    api 'com.google.firebase:firebase-auth:11.6.0'
+
+    //rxjava
+    api 'io.reactivex.rxjava2:rxjava:2.1.14'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
 }
 repositories {
     mavenCentral()

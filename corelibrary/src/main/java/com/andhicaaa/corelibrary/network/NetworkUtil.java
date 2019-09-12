@@ -14,6 +14,11 @@ import androidx.annotation.NonNull;
  */
 public class NetworkUtil {
 
+    private Context context;
+    public NetworkUtil(Context context) {
+        this.context = context;
+    }
+
     public static boolean isConnected(@NonNull Context context) {
         ConnectivityManager connMgr = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
