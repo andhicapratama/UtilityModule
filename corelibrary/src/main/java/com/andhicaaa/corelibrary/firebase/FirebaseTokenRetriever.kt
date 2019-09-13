@@ -1,3 +1,5 @@
+@file:JvmName("FirebaseTokenRetriever")
+
 package com.andhicaaa.corelibrary.firebase
 
 import com.andhicaaa.corelibrary.sharedprefs.CorePreferences

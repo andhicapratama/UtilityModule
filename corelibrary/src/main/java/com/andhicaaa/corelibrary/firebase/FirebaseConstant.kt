@@ -1,3 +1,5 @@
+@file:JvmName("FirebaseAuthConstant")
+
 package com.andhicaaa.corelibrary.firebase
 
 /**

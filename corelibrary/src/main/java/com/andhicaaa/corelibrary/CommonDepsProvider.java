@@ -1,4 +1,4 @@
-package com.andhicaaa.corelibrary.util;
+package com.andhicaaa.corelibrary;
 
 /**
  * Created by instagram : @andhicaaa on 9/12/2019.

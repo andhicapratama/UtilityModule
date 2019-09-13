@@ -1,4 +1,4 @@
-package com.andhicaaa.corelibrary.util;
+package com.andhicaaa.corelibrary;
 
 import androidx.appcompat.app.AppCompatActivity;
 

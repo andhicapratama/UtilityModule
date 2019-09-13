@@ -1,3 +1,5 @@
+@file:JvmName("NetworkError")
+
 package com.andhicaaa.corelibrary.network
 
 import com.andhicaaa.corelibrary.util.TextUtil

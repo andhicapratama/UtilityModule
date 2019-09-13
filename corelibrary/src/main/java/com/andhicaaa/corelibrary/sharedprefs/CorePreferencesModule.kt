@@ -1,3 +1,5 @@
+@file:JvmName("CorePreferencesModule")
+
 package com.andhicaaa.corelibrary.sharedprefs
 
 import android.content.Context

@@ -1,3 +1,5 @@
+@file:JvmName("FirebaseAuthConfigService")
+
 package com.andhicaaa.corelibrary.firebase
 
 import android.app.Activity

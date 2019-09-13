@@ -3,7 +3,7 @@ package com.andhicaaa.corelibrary.firebase;
 import android.util.Log;
 
 import com.andhicaaa.corelibrary.sharedprefs.CorePreferences;
-import com.andhicaaa.corelibrary.util.CommonDepsProvider;
+import com.andhicaaa.corelibrary.CommonDepsProvider;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 

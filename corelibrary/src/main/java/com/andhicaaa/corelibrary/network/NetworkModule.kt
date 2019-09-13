@@ -1,3 +1,5 @@
+@file:JvmName("NetworkModule")
+
 package com.andhicaaa.corelibrary.network
 
 import android.content.Context

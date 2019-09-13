@@ -1,3 +1,5 @@
+@file:JvmName("PermissionUtils")
+
 package com.andhicaaa.corelibrary.util
 
 import android.Manifest
