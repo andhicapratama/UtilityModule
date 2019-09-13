@@ -10,6 +10,7 @@ import javax.inject.Singleton
 /**
  * Created by instagram : @andhicaaa on 9/13/2019.
  */
+
 @Module
 class EventBusModule {
 
