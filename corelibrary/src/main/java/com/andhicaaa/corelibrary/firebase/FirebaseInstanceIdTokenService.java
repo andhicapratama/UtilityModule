@@ -4,8 +4,7 @@ import android.util.Log;
 
 import com.andhicaaa.corelibrary.sharedprefs.CorePreferences;
 import com.andhicaaa.corelibrary.CommonDepsProvider;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
+import com.google.firebase.messaging.FirebaseMessagingService;
 
 import org.reactivestreams.Publisher;
 
@@ -22,7 +21,7 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * Created by instagram : @andhicaaa on 9/12/2019.
  */
-public class FirebaseInstanceIdTokenService extends FirebaseInstanceIdService {
+public class FirebaseInstanceIdTokenService extends FirebaseMessagingService {
 
     @Inject
     CorePreferences preferences;
@@ -35,19 +34,19 @@ public class FirebaseInstanceIdTokenService extends FirebaseInstanceIdService {
     }
 
     @Override
-    public void onTokenRefresh() {
-        super.onTokenRefresh();
-        fetchingInstanceIdToken();
+    public void onNewToken(String s) {
+        super.onNewToken(s);
+        fetchingInstanceIdToken(s);
     }
 
-    private void fetchingInstanceIdToken() {
+    private void fetchingInstanceIdToken(final String s) {
         Log.d("FirebaseIidService", "fetchingInstanceIdToken()");
 
         Flowable<String> firebaseInstanceIdToken = Flowable.defer(new Callable<Publisher<? extends String>>() {
             @Override
             public Publisher<? extends String> call() throws Exception {
                 try {
-                    String instanceIdToken = FirebaseInstanceId.getInstance().getToken();
+                    String instanceIdToken = s;
                     Log.d("instanceIdToken", instanceIdToken);
                     return Flowable.just(instanceIdToken != null ?
                             instanceIdToken : FirebaseConstant.FIREBASE_ID_TOKEN_DEFAULT_VALUE);
